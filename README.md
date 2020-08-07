@@ -2,9 +2,10 @@
 ---
 
  
-This is mainly taken from [Jest starting docs][getting started]
+This is mainly taken from [Jest starting docs][getting started], and is a resource for myself, and possibly others, who want a quick introduction to Jest. Jest is a simple, intuitive JavaScript Testing Framework.
 
 ### Setup
+---
 
 1. Create a new js file
 2. Install Jest  
@@ -35,8 +36,22 @@ This is mainly taken from [Jest starting docs][getting started]
                 "test": "jest"
             }
         }
-7. Run `yarn test` or `npm run test` to run the tests
+7. Run `yarn test` or `npm run test` to run the tests  
 
+### Use
+
+##### Matchers
+
+`expect` is a function that returns an "expectation" object 
+
+        test('two plus two is four', () => {
+            expect(2 + 2).toBe(4);
+        });
+
+
+`.toBe` is a matcher. It uses `Object.is` to test _exact_ equality.
+
+``
 
 
 [getting started]: https://jestjs.io/docs/en/getting-started
